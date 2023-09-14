@@ -1,6 +1,9 @@
+// Time complexity = O(n)
+// Space complexity = O(1)
+
 class Palindrome{
     public static void main(String[] args) {
-        int[] array = {1,2,3,2,1};
+        int[] array = {1,2,3,2,4};
         int n = array.length;
         int flag=0;
 

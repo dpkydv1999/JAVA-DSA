@@ -1,9 +1,30 @@
-//Time complexity: O(n)
+//Time Complexity: O(logN)
 //Space Complexity: O(1)
 
-import java.util.*;
+import java.util.Scanner;
 
-public class LinearSearch{
+
+public class BinarySearch {
+
+    public static int binarySearch(int arr[], int target){
+        int low = 0, high = arr.length-1;
+        while(low<=high){
+            int mid = low +(high-low)/2;
+            if(arr[mid] == target){
+                return mid;
+            }
+            else if(arr[mid]<target){
+                low= low+1;
+            }
+            else{
+                high = mid - 1;
+
+            }
+        }
+        return 0;
+
+
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
@@ -23,23 +44,18 @@ public class LinearSearch{
         System.out.println("Enter the target element:");
         int x = sc.nextInt();
         
-        //Implementation of Linear Search
-        int idx = -1;
-        for(int i=0; i<n; i++){
-            if(arr[i]==x){
-                idx = i;
-                break;
-            }
-        }
+        //function calling of binarySearch
+        int result = binarySearch(arr, x);
+        
 
-        if(idx==-1){
+        if(result==0){
             System.out.println("Searched elements not found in an array");
         }
         else{
-            System.out.println("Searched element is found at location:" +idx);
+            System.out.println("Searched element is found at location:" +result);
         }
 
 
     }
-
+    
 }

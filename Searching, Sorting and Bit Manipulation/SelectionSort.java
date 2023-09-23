@@ -1,3 +1,6 @@
+//Time Complexity: O(n^2)
+//Space Complexity: O(1)
+
 import java.util.Arrays;
 
 public class SelectionSort {
@@ -16,7 +19,6 @@ public class SelectionSort {
                 int temp = arr[min_idx];
                 arr[min_idx] = arr[i];
                 arr[i] = temp;
-
             }         
 
         }

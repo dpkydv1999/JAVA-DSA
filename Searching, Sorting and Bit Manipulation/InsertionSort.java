@@ -1,3 +1,7 @@
+//Time Complexity: O(n^2)
+//space complexity: O(1)
+
+
 import java.util.Arrays;
 
 public class InsertionSort {

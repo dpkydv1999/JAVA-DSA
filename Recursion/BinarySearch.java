@@ -1,3 +1,6 @@
+//Time Complexity: O(log n)
+//Space Complexity: O(log n)
+
 public class BinarySearch {
     
     public static int binarySearch(int arr[], int low, int high, int x){

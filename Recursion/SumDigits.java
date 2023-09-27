@@ -1,3 +1,8 @@
+//Approach: Recursion
+//Time Complexity: O(log n)
+//Space complexity: O(log n)
+
+
 public class SumDigits {
     //function definition
     public static int sumOfDigits(int num){

@@ -1,3 +1,6 @@
+//Time Complexity: O(2^n)
+//Space Complexity: O(n)
+
 import java.util.Scanner;
 
 public class CountWays {
